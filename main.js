@@ -20,14 +20,14 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if(command === 'ping') {
+    if(command.toLowerCase() == 'ping') {
         message.channel.send('pong!');
     }
-    else if(command === 'website')
+    else if(command.toLowerCase() == 'website')
     {
-        message.channel.send('https://faceitelocheck.com/')
+        message.channel.send('https://mell0w.net/')
     }
-    else if(command === 'GetElo' || command === 'Getelo' || command === 'getelo')
+    else if(command.toLowerCase() == 'getelo')
     {
 
         $.ajax({
@@ -53,7 +53,7 @@ client.on('message', message => {
         })
 
     }
-    else if(command === 'GetStats' || command === 'Getstats' || command === 'getstats')
+    else if(command.toLowerCase() == 'getstats')
     {
         var matchResults = [];
 
