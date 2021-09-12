@@ -110,4 +110,4 @@ client.on('message', message => {
 
 })
 
-client.login('NzgzNzI5ODg5OTMzMTMxODAx.X8e_Vg.vI8cAA52gijmFh3PdmNv7ZM6ok4');
+client.login('Add you Discord Token here');
