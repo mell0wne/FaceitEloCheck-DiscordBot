@@ -35,7 +35,7 @@ client.on('message', message => {
             url: "https://open.faceit.com/data/v4/players?nickname=" + args[0],
             contentType: 'application/json',
             beforeSend: function (xhr) {
-                xhr.setRequestHeader('Authorization', 'Bearer a4132beb-bad8-4078-b7e2-51fe26645e34');
+                xhr.setRequestHeader('Authorization', 'Bearer You_FaceitDeveloper_AuthKey');
                 xhr.setRequestHeader("Content-type","application/json");
                 },
                 success: function(result) {
@@ -63,7 +63,7 @@ client.on('message', message => {
             url: "https://open.faceit.com/data/v4/players?nickname=" + args[0] ,
             contentType: 'application/json',
             beforeSend: function (xhr) {
-            xhr.setRequestHeader('Authorization', 'Bearer a4132beb-bad8-4078-b7e2-51fe26645e34');
+            xhr.setRequestHeader('Authorization', 'Bearer You_FaceitDeveloper_AuthKey');
             xhr.setRequestHeader("Content-type","application/json");
             },
             success: function (result) {
@@ -72,7 +72,7 @@ client.on('message', message => {
                     url: "https://open.faceit.com/data/v4/players/" + result.player_id + "/stats/csgo",
                     contentType: 'application/json',
                     beforeSend: function (xhr) {
-                        xhr.setRequestHeader('Authorization', 'Bearer a4132beb-bad8-4078-b7e2-51fe26645e34');
+                        xhr.setRequestHeader('Authorization', 'Bearer You_FaceitDeveloper_AuthKey');
                         xhr.setRequestHeader("Content-type","application/json");
                         },
                         success: function(result) {
